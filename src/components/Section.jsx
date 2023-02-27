@@ -1,7 +1,7 @@
 import { Component } from 'react';
 import PropTypes from 'prop-types';
-import FeedbackOptions from './FeedbackOptions';
-import Statistics from './Statistics';
+import FeedbackOptions from './FeedbackOptions/FeedbackOptions';
+import Statistics from './Statistics/Statistics';
 
 class Section extends Component {
   state = {
@@ -21,7 +21,7 @@ class Section extends Component {
   };
 
   countPositiveFeedbackPercentage = () => {
-    return ((this.state.good * 100) / this.countTotalFeedback()).toFixed();
+    return Math.round((this.state.good * 100) / this.countTotalFeedback());
   };
 
   render() {

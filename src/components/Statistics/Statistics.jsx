@@ -1,22 +1,23 @@
 import PropTypes from 'prop-types';
-import Notification from './Notification';
+import Notification from '../Notification/Notification';
+import { Info, List } from './Statistics.styled';
 
 const Statistics = ({ good, neutral, bad, total, positivePercentage }) => {
   const variableContent =
     total === 0 ? (
       <Notification message="No feedback given" />
     ) : (
-      <>
-        <span>Good:{good}</span>
-        <br />
-        <span>Neutral:{neutral}</span>
-        <br />
-        <span>Bad:{bad}</span>
-        <br />
-        <span>Total:{total}</span>
-        <br />
-        <span>Positive feedback:{positivePercentage}%</span>
-      </>
+      <List>
+        <Info>Good: {good}</Info>
+
+        <Info>Neutral: {neutral}</Info>
+
+        <Info>Bad: {bad}</Info>
+
+        <Info>Total: {total}</Info>
+
+        <Info>Positive feedback: {positivePercentage}%</Info>
+      </List>
     );
 
   return (
