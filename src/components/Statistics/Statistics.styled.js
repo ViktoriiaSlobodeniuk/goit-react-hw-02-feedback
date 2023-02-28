@@ -3,10 +3,13 @@ import styled from 'styled-components';
 export const List = styled.div`
   display: flex;
   flex-direction: column;
-  gap: 10px;
+  gap: 15px;
 `;
 
-export const Info = styled.span`
+export const Info = styled.p`
   color: white;
-  padding-top: 5px;
+`;
+
+export const Span = styled.span`
+  color: #fff9fb;
 `;

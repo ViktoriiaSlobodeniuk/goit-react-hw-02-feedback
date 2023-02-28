@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 
 export const Layout = styled.div`
-  background-color: pink;
+  background-color: #ff6096;
   text-align: center;
   padding-bottom: 100%;
 `;
