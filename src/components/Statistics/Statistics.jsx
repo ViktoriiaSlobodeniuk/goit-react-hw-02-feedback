@@ -30,12 +30,7 @@ const Statistics = ({ good, neutral, bad, total, positivePercentage }) => {
       </List>
     );
 
-  return (
-    <>
-      <h1>Statistics</h1>
-      {variableContent}
-    </>
-  );
+  return <>{variableContent}</>;
 };
 
 Statistics.propTypes = {
